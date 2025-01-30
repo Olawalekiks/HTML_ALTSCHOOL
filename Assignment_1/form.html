@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALTSCHOOL Application Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="form-section">
+        <h1>Signup</h1>
+        <p>Take the next steps to apply at AltSchool Africa</p>
+        <form action="/submit">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  placeholder="Enter first name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  placeholder="Enter last name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Contact Information</legend>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter email address"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="08154387000"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Ghana">Ghana</option>
+                  <option value="us">USA</option>
+                  <option value="uk">United Kingdom</option>
+                  <option value="canada">Canada</option>
+                  <option value="restOftheWorld">Rest of the World</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="state&city">State/City of Residence</label>
+                <input
+                  type="text"
+                  id="state&city"
+                  name="state&city"
+                  placeholder="Enter state of residence"
+                  required
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Account Security</legend>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Enter password"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="confirm-password"
+                  placeholder="Re-enter password"
+                  required
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <p class="terms">
+            By clicking continue, I agree to the <strong>Terms of Use</strong>
+            and acknowledge that I have read the
+            <strong>Privacy Policy</strong>.
+          </p>
+          <button type="submit">Submit Application</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <address>Address: 123 Adeola Raji, Atrunrase Estate, Gbagada</address>
+      <p>&copy; 2024 Olawale Kikiowo. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

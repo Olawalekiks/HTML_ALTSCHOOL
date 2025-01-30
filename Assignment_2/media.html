@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Olawale Kikiowo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="cartoon-nav">
+      <div class="nav-container">
+        <a href="#" class="logo">Olawale</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#picture">Picture</a></li>
+          <li><a href="#audio">Audio</a></li>
+          <li><a href="#video">Video</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="about-section" id="about">
+        <h1 class="cartoon-title">About Me 🚀</h1>
+        <div class="content-wrapper">
+          <p class="intro-text">
+            Hello! I'm Olawale Kikiowo, and I'm on an exciting journey with
+            AltSchool Africa. Here's a bit about me:
+          </p>
+
+          <div class="media-card" id="picture">
+            <h2 class="cartoon-subtitle">Responsive Picture 📸</h2>
+            <div class="image-container">
+              <img
+                src="Media/IMG_2253.jpg"
+                alt="Olawale Kikiowo"
+                class="responsive-img floating"
+              />
+            </div>
+            <p class="caption">
+              This responsive image adapts to your device's screen size!
+            </p>
+          </div>
+
+          <div class="media-card" id="audio">
+            <h2 class="cartoon-subtitle">Audio Message 🎧</h2>
+            <div class="audio-container">
+              <audio controls class="cartoon-audio">
+                <source src="Media/A+Life+Of+Abundance.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+
+          <div class="media-card" id="video">
+            <h2 class="cartoon-subtitle">Video Introduction 🎥</h2>
+            <div class="video-wrapper">
+              <video controls class="responsive-video cartoon-video">
+                <source src="https://pin.it/2p03nEKQH" type="video/mp4" />
+                Your browser does not support the video element.
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="cartoon-footer">
+      <p>&copy; 2024 Olawale Kikiowo. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document
+        .querySelector(".menu-toggle")
+        .addEventListener("click", function () {
+          document.querySelector(".nav-links").classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>
