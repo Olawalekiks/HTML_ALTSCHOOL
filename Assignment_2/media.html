@@ -4,84 +4,187 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me - Olawale Kikiowo</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+    <style>
+      :root {
+        --navy: #2e5077;
+        --teal: #4da1a9;
+        --mint: #79d7be;
+        --cream: #f6f4f0;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--cream);
+        color: var(--navy);
+      }
+
+      .cartoon-nav {
+        background: var(--teal);
+        padding: 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        border-bottom: 3px solid var(--navy);
+      }
+
+      .nav-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .nav-links a {
+        color: var(--cream);
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        font-weight: 600;
+        border: 2px solid transparent;
+      }
+
+      .nav-links a:hover {
+        background: var(--navy);
+        transform: translateY(-2px);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      main {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      h1 {
+        color: var(--teal);
+        text-align: center;
+        font-size: 2.5rem;
+        text-shadow: 2px 2px var(--navy);
+        margin-bottom: 2rem;
+      }
+
+      .media-card {
+        background: white;
+        border-radius: 15px;
+        padding: 1.5rem;
+        margin: 2rem 0;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border: 2px solid var(--navy);
+      }
+
+      .responsive-img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 12px;
+        border: 3px solid var(--mint);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .responsive-img:hover {
+        transform: scale(1.05) rotate(2deg);
+      }
+
+      audio,
+      video {
+        width: 100%;
+        margin: 1rem 0;
+        border-radius: 12px;
+        border: 2px solid var(--mint);
+      }
+
+      footer {
+        background: var(--navy);
+        color: var(--cream);
+        text-align: center;
+        padding: 1.5rem;
+        margin-top: 3rem;
+        border-top: 3px solid var(--teal);
+      }
+
+      @media (max-width: 600px) {
+        .nav-links {
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+        }
+
+        .responsive-img {
+          max-width: 200px;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        .media-card {
+          padding: 1rem;
+          margin: 1rem 0;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav class="cartoon-nav">
-      <div class="nav-container">
-        <a href="#" class="logo">Olawale</a>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#picture">Picture</a></li>
-          <li><a href="#audio">Audio</a></li>
-          <li><a href="#video">Video</a></li>
-        </ul>
-        <div class="menu-toggle">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#picture">Picture</a></li>
+        <li><a href="#audio">Audio</a></li>
+        <li><a href="#video">Video</a></li>
+      </ul>
     </nav>
 
     <main>
       <section class="about-section" id="about">
-        <h1 class="cartoon-title">About Me 🚀</h1>
-        <div class="content-wrapper">
-          <p class="intro-text">
-            Hello! I'm Olawale Kikiowo, and I'm on an exciting journey with
-            AltSchool Africa. Here's a bit about me:
+        <h1>About Me 🎨</h1>
+        <div class="media-card">
+          <p>
+            Hello! My name is Olawale Kikiowo, and I'm on an exciting journey
+            with AltSchool Africa. Here's a bit about me:
           </p>
+        </div>
 
-          <div class="media-card" id="picture">
-            <h2 class="cartoon-subtitle">Responsive Picture 📸</h2>
-            <div class="image-container">
-              <img
-                src="Media/IMG_2253.jpg"
-                alt="Olawale Kikiowo"
-                class="responsive-img floating"
-              />
-            </div>
-            <p class="caption">
-              This responsive image adapts to your device's screen size!
-            </p>
-          </div>
+        <div class="media-card" id="picture">
+          <h2>Responsive Picture 📸</h2>
+          <picture>
+            <img
+              src="Media/IMG_2253.jpg"
+              alt="A photo of Olawale Kikiowo"
+              class="responsive-img"
+            />
+          </picture>
+          <p>This responsive image adapts to your device's screen size!</p>
+        </div>
 
-          <div class="media-card" id="audio">
-            <h2 class="cartoon-subtitle">Audio Message 🎧</h2>
-            <div class="audio-container">
-              <audio controls class="cartoon-audio">
-                <source src="Media/A+Life+Of+Abundance.mp3" type="audio/mpeg" />
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-          </div>
+        <div class="media-card" id="audio">
+          <h2>Audio Message 🎧</h2>
+          <audio controls>
+            <source src="Media/A+Life+Of+Abundance.mp3" type="audio/mpeg" />
+            <source src="audio/my-journey.ogg" type="audio/ogg" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
 
-          <div class="media-card" id="video">
-            <h2 class="cartoon-subtitle">Video Introduction 🎥</h2>
-            <div class="video-wrapper">
-              <video controls class="responsive-video cartoon-video">
-                <source src="https://pin.it/2p03nEKQH" type="video/mp4" />
-                Your browser does not support the video element.
-              </video>
-            </div>
-          </div>
+        <div class="media-card" id="video">
+          <h2>Video Introduction 🎥</h2>
+          <video controls class="responsive-video">
+            <source src="https://pin.it/2p03nEKQH" type="video/mp4" />
+            <source src="video/introduction.webm" type="video/webm" />
+            Your browser does not support the video element.
+          </video>
         </div>
       </section>
     </main>
 
-    <footer class="cartoon-footer">
+    <footer>
       <p>&copy; 2024 Olawale Kikiowo. All rights reserved.</p>
     </footer>
-
-    <script>
-      document
-        .querySelector(".menu-toggle")
-        .addEventListener("click", function () {
-          document.querySelector(".nav-links").classList.toggle("active");
-        });
-    </script>
   </body>
 </html>
